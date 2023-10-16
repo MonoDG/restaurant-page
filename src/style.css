@@ -6,9 +6,10 @@
 
 body {
   background-image: url(./coffee-beans.png);
-  background-repeat: space repeat;
-  background-size: 64px;
+  background-repeat: space;
+  background-size: 128px;
   height: 100vh;
+  background-color: #EADDCA;
 }
 
 #content {
