@@ -9,6 +9,7 @@ body {
   background-repeat: repeat;
   background-size: 320px;
   background-color: #EADDCA;
+  margin: 10px;
 }
 
 #content {
@@ -39,8 +40,9 @@ body {
   cursor: pointer;
 }
 
-.nav button:hover {
-  background-color: #C19A6B;
+.nav button:hover,
+.nav button:active {
+  background-color: #E1C16E;
 }
 
 .nav li:first-child button {
@@ -49,14 +51,20 @@ body {
 
 .nav li:last-child button {
   border-top-right-radius: 10px;
-  box-shadow: 2px 0 5px 0 black;
+  box-shadow: 2px 2px 5px 0 gray;
 }
 
-.main-content,
 .nav button {
-  background-color: #E1C16E;
+  background-color: #C19A6B;
 }
 
 .main-content {
-  box-shadow: 2px 2px 5px 0 black;
+  background-color: #E1C16E;
+  box-shadow: 5px 5px 5px 0 gray;
+  border-radius: 10px;
+}
+
+.hero {
+  height: 30vh;
+  /* background-image: url(); */
 }
