@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@ body {
   background-size: 320px;
   background-color: #EADDCA;
   margin: 10px;
+  font-family: 'Dancing Script', serif;
 }
 
 #content {
@@ -27,22 +30,25 @@ body {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  /* gap: 1px; */
 }
 
 .nav button {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
   border-bottom: none;
   padding: 10px;
   font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Dancing Script', serif;
 }
 
 .nav button:hover,
-.nav button:active {
-  background-color: #E1C16E;
+.nav button:active,
+.main-content {
+  background-color: #FFFF8F;
 }
 
 .nav li:first-child button {
@@ -54,17 +60,32 @@ body {
   box-shadow: 2px 2px 5px 0 gray;
 }
 
+.nav li:first-child+li:not(li:last-child) button {
+  border-left: none;
+  border-right: none;
+}
+
 .nav button {
-  background-color: #C19A6B;
+  background-color: #FFBF00;
 }
 
 .main-content {
-  background-color: #E1C16E;
   box-shadow: 5px 5px 5px 0 gray;
   border-radius: 10px;
+  border: 2px solid black;
 }
 
-.hero {
-  height: 30vh;
-  /* background-image: url(); */
+.hero-image {
+  height: 45vh;
+  margin: 10px 0;
+  background-image: url(./3395.jpg);
+  background-size: cover;
+}
+
+.hero-text {}
+
+@media only screen and (max-width: 500px) {
+  .main-content {
+    border-radius: 0;
+  }
 }
