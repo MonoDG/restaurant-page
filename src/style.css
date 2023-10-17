@@ -5,9 +5,9 @@
 }
 
 body {
-  background-image: url(./coffee-beans.png);
-  background-repeat: space;
-  background-size: 128px;
+  background-image: url(./icons.png);
+  background-repeat: repeat;
+  background-size: 320px;
   height: 100vh;
   background-color: #EADDCA;
 }
