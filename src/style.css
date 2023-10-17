@@ -8,7 +8,6 @@ body {
   background-image: url(./icons.png);
   background-repeat: repeat;
   background-size: 320px;
-  height: 100vh;
   background-color: #EADDCA;
 }
 
@@ -27,9 +26,37 @@ body {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  /* gap: 1px; */
 }
 
 .nav button {
-  background-color: transparent;
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background-color: #C19A6B;
+}
+
+.nav li:first-child button {
+  border-top-left-radius: 10px;
+}
+
+.nav li:last-child button {
+  border-top-right-radius: 10px;
+  box-shadow: 2px 0 5px 0 black;
+}
+
+.main-content,
+.nav button {
+  background-color: #E1C16E;
+}
+
+.main-content {
+  box-shadow: 2px 2px 5px 0 black;
 }
