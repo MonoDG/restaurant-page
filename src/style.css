@@ -31,6 +31,12 @@ body,
   grid-template-rows: 1fr auto;
 }
 
+.nav {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
+
 .nav ul {
   display: flex;
   justify-content: center;
