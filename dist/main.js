@@ -120,13 +120,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createFooter)\n/* harmony export */ });\nfunction createFooter() {\n    const footer = document.createElement(\"section\");\n    footer.classList.add(\"footer\");\n\n    const aIcons = document.createElement(\"a\");\n    const aImage = document.createElement(\"a\");\n\n    aIcons.setAttribute(\"href\", \"https://www.flaticon.com/icons\");\n    aImage.setAttribute(\"href\", \"https://www.freepik.com/free-vector/coffee-shop-with-wooden-counter-stools-sofas-tables_9886872.htm#query=anime%20cafe%20background&position=27&from_view=search&track=ais\");\n\n    aIcons.textContent = \"Background Icons created by Freepik - Flaticon\";\n    aImage.textContent = \"Image by upklyak on Freepik\";\n\n    footer.appendChild(aIcons);\n    footer.appendChild(aImage);\n\n    return footer;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconsole.log(\"Hello world!\");\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/nav.js":
+/*!********************!*\
+  !*** ./src/nav.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNav)\n/* harmony export */ });\nfunction createNav() {\n    const nav = document.createElement(\"section\");\n    nav.classList.add(\"nav\");\n\n    const ul = document.createElement(\"ul\");\n    const liHome = document.createElement(\"li\");\n    const liMenu = document.createElement(\"li\");\n    const liContact = document.createElement(\"li\");\n\n    const btnHome = document.createElement(\"button\");\n    const btnMenu = document.createElement(\"button\");\n    const btnContact = document.createElement(\"button\");\n\n    btnHome.setAttribute(\"id\", \"btn-home\");\n    btnMenu.setAttribute(\"id\", \"btn-menu\");\n    btnContact.setAttribute(\"id\", \"btn-contact\");\n\n    btnHome.textContent = \"Home\";\n    btnMenu.textContent = \"Menu\";\n    btnContact.textContent = \"Contact\";\n\n    liHome.appendChild(btnHome);\n    liMenu.appendChild(btnMenu);\n    liContact.appendChild(btnContact);\n\n    ul.appendChild(liHome);\n    ul.appendChild(liMenu);\n    ul.appendChild(liContact);\n\n    nav.appendChild(ul);\n\n    return nav;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/nav.js?");
+
+/***/ }),
+
+/***/ "./src/pageLoad.js":
+/*!*************************!*\
+  !*** ./src/pageLoad.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\nfunction pageLoad() {\n    const content = document.querySelector(\"#content\");\n\n    const main = document.createElement(\"div\");\n    main.classList.add(\"main\")\n\n    main.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n    main.appendChild((0,_footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\n\n\n    content.appendChild(main);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
 
 /***/ }),
 

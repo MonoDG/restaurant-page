@@ -1,3 +1,3 @@
-import './style.css';
+import pageLoad from "./pageLoad";
 
-console.log("Hello world!");
+pageLoad();
