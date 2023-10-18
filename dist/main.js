@@ -130,6 +130,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome() {\n    const home = document.createElement(\"section\");\n    home.classList.add(\"home\")\n    home.setAttribute(\"id\", \"home\");\n\n    const heroHeader = document.createElement(\"header\");\n    heroHeader.classList.add(\"hero\");\n\n    const heroImage = document.createElement(\"div\");\n    heroImage.classList.add(\"hero-image\");\n\n    const heroText = document.createElement(\"div\");\n    heroText.classList.add(\"hero-text\");\n\n    const h1 = document.createElement(\"h1\");\n    h1.textContent = \"Coffeesaurus\";\n\n    heroText.appendChild(h1);\n    heroHeader.appendChild(heroImage);\n    heroHeader.appendChild(heroText);\n\n    const homeContent = document.createElement(\"section\");\n    homeContent.classList.add(\"home-content\");\n\n    const p = document.createElement(\"p\");\n    p.textContent = \"Step into the prehistoric paradise of Coffeesaurus, where the enchanting world of dinosaurs meets the rich and invigorating world of coffee. Our café is a haven for coffee aficionados and dino-enthusiasts alike. Sip on our meticulously crafted coffee creations, each sip taking you on a journey through a myriad of flavors, from the bold \\\"Velociraptor Roast\\\" to the smooth \\\"Triceratops Mocha.\\\" As you savor your beverage, immerse yourself in the Mesozoic ambiance of our coffee shop, with life-sized dinosaur replicas and captivating murals that transport you back in time. At Coffeesaurus, we combine the magic of coffee with the awe-inspiring wonder of dinosaurs to create an experience like no other. Come and awaken your taste buds and your inner paleontologist at Coffeesaurus today!\"\n\n    homeContent.appendChild(p);\n\n    home.appendChild(heroHeader);\n    home.appendChild(homeContent);\n\n    return home;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -156,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\nfunction pageLoad() {\n    const content = document.querySelector(\"#content\");\n\n    const main = document.createElement(\"div\");\n    main.classList.add(\"main\")\n\n    main.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n    main.appendChild((0,_footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\n\n\n    content.appendChild(main);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\n\n\nfunction pageLoad() {\n    const content = document.querySelector(\"#content\");\n\n    const main = document.createElement(\"div\");\n    main.classList.add(\"main\")\n\n    const mainContent = document.createElement(\"section\");\n    mainContent.classList.add(\"main-content\");\n    // Add Home content on initial page load\n    mainContent.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_3__[\"default\"])());\n    mainContent.appendChild((0,_footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\n\n    main.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n    main.appendChild(mainContent);\n\n    content.appendChild(main);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
 
 /***/ }),
 
