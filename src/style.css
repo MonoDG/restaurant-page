@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
-/* @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
 * {
   margin: 0;
@@ -80,17 +80,27 @@ body,
 }
 
 .hero-image {
-  height: 45vh;
+  height: 25vh;
   background-image: url(./3395.jpg);
   background-size: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom: 2px solid black;
 }
 
 .hero-text {
   margin: 20px;
   text-align: center;
   font-size: 4rem;
+}
+
+.home-content {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  font-family: "Special Elite", serif;
+  font-size: 1.2rem;
+  line-height: 3ch;
 }
 
 @media only screen and (max-width: 500px) {
