@@ -110,6 +110,39 @@ body,
   line-height: 3ch;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu .menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Special Elite", serif;
+  font-size: 1.3rem;
+  line-height: 3ch;
+  padding: 20px;
+}
+
+.menu .menu-card:not(.menu .menu-card:last-child) {
+  border-bottom: 2px solid black;
+}
+
+.menu .menu-card-header {
+  text-align: center;
+}
+
+.menu-card-image {
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
 .footer {
   padding: 10px;
   border-bottom-left-radius: 10px;

@@ -1,0 +1,34 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "title": "Velociraptor Roast",
+            "imageUrl": "./velociraptor.jpeg",
+            "description": "Unleash your inner coffee predator with our \"Velociraptor Roast.\" This bold and robust coffee is as agile and fierce as the namesake dinosaur. With a sharp, intense flavor, it's perfect for those who crave an adrenaline-packed coffee experience. The Velociraptor Roast boasts a hint of earthy undertones and a surprisingly smooth finish, making it a truly captivating and invigorating brew."
+        },
+        {
+            "id": 2,
+            "title": "Triceratops Mocha",
+            "imageUrl": "./triceratops.jpeg",
+            "description": "The \"Triceratops Mocha\" is a majestic fusion of flavors that combines the strength of a Triceratops with the sweetness of a classic mocha. This coffee blend marries the full-bodied richness of our finest coffee beans with a velvety cocoa infusion. Just like the three-horned Triceratops, it offers a harmonious balance of flavors, resulting in a comforting and indulgent coffee experience that's both robust and delightfully sweet."
+        },
+        {
+            "id": 3,
+            "title": "Stegosaurus Caramel Delight",
+            "imageUrl": "./stegosaurus.jpeg",
+            "description": "Experience the perfect blend of our rich, dark coffee with a velvety caramel infusion. Just like the gentle giant of the prehistoric era, this coffee flavor combines strength and sweetness for a delightful sip."
+        },
+        {
+            "id": 4,
+            "title": "Pterodactyl Vanilla Swirl",
+            "imageUrl": "./pterodactyl.jpeg",
+            "description": "Soar to new heights of flavor with our Pterodactyl Vanilla Swirl. This coffee creation features a smooth vanilla twist that will take your taste buds on a journey through the skies of deliciousness."
+        },
+        {
+            "id": 5,
+            "title": "Brachiosaurus Hazelnut Heaven",
+            "imageUrl": "./brachiosaurus.jpeg",
+            "description": "Unearth the sublime taste of our Brachiosaurus Hazelnut Heaven. This coffee blend is as towering and majestic as the Brachiosaurus itself, with the warm and nutty essence of hazelnuts that will transport you to coffee paradise."
+        }
+    ]
+}
