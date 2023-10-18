@@ -56,7 +56,7 @@ body,
 }
 
 .nav button:hover,
-.nav button:active {
+.nav button.btn-active {
   background-color: #FFBF00;
 }
 
