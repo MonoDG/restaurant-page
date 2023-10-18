@@ -1,6 +1,7 @@
 import pageLoad from "./pageLoad";
 import createHome from "./home";
 import createMenu from "./menu";
+import createContact from "./contact";
 import createFooter from "./footer";
 
 pageLoad();
@@ -29,3 +30,12 @@ btnMenu.addEventListener("click", () => {
     mainContent.appendChild(createMenu());
     mainContent.appendChild(createFooter());
 });
+
+btnContact.addEventListener("click", () => {
+    btnHome.classList.remove("btn-active");
+    btnMenu.classList.remove("btn-active");
+    btnContact.classList.add("btn-active");
+    mainContent.replaceChildren();
+    mainContent.appendChild(createContact());
+    mainContent.appendChild(createFooter());
+})
